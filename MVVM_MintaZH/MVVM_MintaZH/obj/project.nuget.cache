@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "J8pmWCi43WD/kPU6FOVGKpP2SlzCtk5er9YcZhZNwL6cuotu7yWTp24oE4ZOLGofkliefmqr6I857OYq1rYmDg==",
+  "success": true,
+  "projectFilePath": "G:\\Egyetem\\21_22_2\\Prog4\\Órai\\MVVM_MintaZH\\MVVM_MintaZH\\MVVM_MintaZH.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Norbi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Norbi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Norbi\\.nuget\\packages\\microsoft.toolkit.mvvm\\7.1.2\\microsoft.toolkit.mvvm.7.1.2.nupkg.sha512",
+    "C:\\Users\\Norbi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
