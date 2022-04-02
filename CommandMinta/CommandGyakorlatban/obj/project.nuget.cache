@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "1UnGf6X+iId86BJHWoxjDC5bIo+Ov4NTeV0lFcHW8P6yTZGtM1FWr0Eo02WGLEop1qE7lvlqW4qUOtj1uauJQA==",
+  "success": true,
+  "projectFilePath": "G:\\Egyetem\\21_22_2\\Prog4\\Órai\\CommandMinta\\CommandGyakorlatban\\CommandGyakorlatban.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Norbi\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Norbi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Norbi\\.nuget\\packages\\microsoft.toolkit.mvvm\\7.1.2\\microsoft.toolkit.mvvm.7.1.2.nupkg.sha512",
+    "C:\\Users\\Norbi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
