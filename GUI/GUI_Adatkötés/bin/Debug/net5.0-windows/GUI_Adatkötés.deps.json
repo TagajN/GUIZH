@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "GUI_Adatkötés/1.0.0": {
+        "runtime": {
+          "GUI_Adatkötés.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GUI_Adatkötés/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

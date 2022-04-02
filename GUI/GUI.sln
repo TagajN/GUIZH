@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_Adatkötés", "GUI_Adatkötés\GUI_Adatkötés.csproj", "{4BA733B8-58CA-416D-9AA8-DEC78C178120}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniEditorBinding", "MiniEditorBinding\MiniEditorBinding.csproj", "{165E9D72-E1B9-4668-9B88-76AF17325549}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BA733B8-58CA-416D-9AA8-DEC78C178120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA733B8-58CA-416D-9AA8-DEC78C178120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA733B8-58CA-416D-9AA8-DEC78C178120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA733B8-58CA-416D-9AA8-DEC78C178120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{165E9D72-E1B9-4668-9B88-76AF17325549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{165E9D72-E1B9-4668-9B88-76AF17325549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{165E9D72-E1B9-4668-9B88-76AF17325549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{165E9D72-E1B9-4668-9B88-76AF17325549}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9C362D8-CFCF-40BA-A051-22B1EC579C0D}
+	EndGlobalSection
+EndGlobal

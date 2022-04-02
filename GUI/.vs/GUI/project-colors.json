@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4ba733b8-58ca-416d-9aa8-dec78c178120": {
+      "ProjectGuid": "4ba733b8-58ca-416d-9aa8-dec78c178120",
+      "DisplayName": "GUI_Adatkötés",
+      "ColorIndex": 0
+    },
+    "165e9d72-e1b9-4668-9b88-76af17325549": {
+      "ProjectGuid": "165e9d72-e1b9-4668-9b88-76af17325549",
+      "DisplayName": "MiniEditorBinding",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
