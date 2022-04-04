@@ -27,5 +27,10 @@ namespace Computer_app
             this.DataContext = new InvoiceWindowViewModel();
             (this.DataContext as InvoiceWindowViewModel).Setup(componentAssets);
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var Actual = ls_box.Items.Cast<ComponentAsset>().ToList();
+        }
     }
 }

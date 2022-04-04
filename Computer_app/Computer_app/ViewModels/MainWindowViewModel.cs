@@ -74,21 +74,6 @@ namespace Computer_app.ViewModels
         {
 
         }
-
-        public ObservableCollection<ComponentAsset> loadData()
-        {
-            string line;
-            System.IO.StreamReader file = new System.IO.StreamReader("Data.txt");
-            while ((line = file.ReadLine()) != null)
-            {
-                string[] words = line.Split(';');
-                Storage.Add(new ComponentAsset()
-                { Name = words[0], Type = words[1], Price = (int.Parse(words[2])) });
-            }
-
-            file.Close();
-            return Storage;
-        }
         public MainWindowViewModel(IComponentLogic logic)
         {
             this.logic = logic;
@@ -97,8 +82,8 @@ namespace Computer_app.ViewModels
 
             logic.SetupCollections(Storage, Basket);
             LoadData = new RelayCommand(
-                () => Storage = loadData(),
-                () => loadData() != null
+                () => logic.loadData(),
+                () => Storage.ToArray().Length == 0
                 );
 
             AddToBasket = new RelayCommand(

@@ -76,6 +76,21 @@ namespace Computer_app.Logic
             tw.Close();
             invoiceSercvice.InvoiceList(basket);
         }
+
+        public IList<ComponentAsset> loadData()
+        {
+            string line;
+            System.IO.StreamReader file = new System.IO.StreamReader("Data.txt");
+            while ((line = file.ReadLine()) != null)
+            {
+                string[] words = line.Split(';');
+                storage.Add(new ComponentAsset()
+                { Name = words[0], Type = words[1], Price = (int.Parse(words[2])) });
+            }
+
+            file.Close();
+            return storage;
+        }
         public double AllCost
         {
             get

@@ -6,18 +6,16 @@
         xmlns:vms="clr-namespace:Computer_app.ViewModels"
         xmlns:local="clr-namespace:Computer_app"
         mc:Ignorable="d"
-        Title="InvoiceWindow" Height="450" Width="400">
+        Title="InvoiceWindow" Height="450" Width="400" Loaded="Window_Loaded">
     <Grid>
-        <ListBox HorizontalContentAlignment="Stretch">
+        <ListBox HorizontalContentAlignment="Stretch" ItemsSource="{Binding Actual}" x:Name="ls_box">
             <ListBox.ItemTemplate>
                 <DataTemplate>
-                    <Border BorderBrush="Black" BorderThickness="1">
-                        <StackPanel>
-                            <Label Content="{Binding Actual.Name}" FontSize="16" ContentStringFormat="Név: {0}"/>
-                            <Label Content="{Binding Actual.Type}" FontSize="16" ContentStringFormat="Típusa: {0}"/>
-                            <Label Content="{Binding Actual.Price}" FontSize="16" ContentStringFormat="Ár: {0}"/>
-                        </StackPanel>
-                    </Border>
+                    <StackPanel>
+                        <Label Content="{Binding Name}" FontSize="16" ContentStringFormat="Név: {0}"/>
+                        <Label Content="{Binding Type}" FontSize="16" ContentStringFormat="Típusa: {0}"/>
+                        <Label Content="{Binding Price}" FontSize="16" ContentStringFormat="Ár: {0}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>

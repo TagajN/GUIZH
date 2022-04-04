@@ -9,6 +9,7 @@ namespace Computer_app.Logic
 
         void AddToBasket(ComponentAsset componentAsset);
         void Invoice(IList<ComponentAsset> basket);
+        IList<ComponentAsset> loadData();
         void RemoveFromBasket(ComponentAsset componentAsset);
         void SetupCollections(IList<ComponentAsset> storage, IList<ComponentAsset> basket);
         double UpdatePrice(ComponentAsset componentAsset);
