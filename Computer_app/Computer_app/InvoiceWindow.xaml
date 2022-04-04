@@ -1,0 +1,25 @@
+﻿<Window x:Class="Computer_app.InvoiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vms="clr-namespace:Computer_app.ViewModels"
+        xmlns:local="clr-namespace:Computer_app"
+        mc:Ignorable="d"
+        Title="InvoiceWindow" Height="450" Width="400">
+    <Grid>
+        <ListBox HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <StackPanel>
+                            <Label Content="{Binding Actual.Name}" FontSize="16" ContentStringFormat="Név: {0}"/>
+                            <Label Content="{Binding Actual.Type}" FontSize="16" ContentStringFormat="Típusa: {0}"/>
+                            <Label Content="{Binding Actual.Price}" FontSize="16" ContentStringFormat="Ár: {0}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

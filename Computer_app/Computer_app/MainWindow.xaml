@@ -1,0 +1,66 @@
+﻿<Window x:Class="Computer_app.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Computer_app"
+        xmlns:vms="clr-namespace:Computer_app.ViewModels"
+        xmlns:helper="clr-namespace:Computer_app.Helper"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <vms:MainWindowViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <helper:ColorConverter x:Key="colorconverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Grid.Column="0" ItemsSource="{Binding Storage}" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedFromStorage}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <Grid Background="{Binding Type, Converter={StaticResource colorconverter}, Mode=OneWay}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                                <RowDefinition Height="1*"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" Content="{Binding Name}" Foreground="{Binding Name}" FontSize="14" FontWeight="Bold" ContentStringFormat="Név: {0}"/>
+                            <Label Grid.Column="0" Grid.Row="1" Content="{Binding Type}" FontSize="14" FontWeight="Bold" ContentStringFormat="Típusa: {0}"/>
+                            <Label Grid.Column="0" Grid.Row="2" Content="{Binding Price}" FontSize="14" FontWeight="Bold" ContentStringFormat="Ár: {0}Ft"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <StackPanel Grid.Column="1">
+            <Label Content="{Binding AllCost}" HorizontalContentAlignment="Center" ContentStringFormat="Összár: {0}Ft" />
+            <Button Content="Add to basket" Command="{Binding AddToBasket}" Padding="10" Margin="10" />
+            <Button Content="Remove from basket" Command="{Binding RemoveFromBasket}" Padding="10" Margin="10"/>
+            <Button Content="10% Discount" Command="{Binding UpdatePrice}" Padding="10" Margin="10"/>
+            <Button Content="Invoice items" Command="{Binding InvoiceList}" Padding="10" Margin="10"/>
+            <Button Content="Load asset" Command="{Binding LoadData}" Padding="10" Margin="10"/>
+        </StackPanel>
+        <ListBox Grid.Column="2" ItemsSource="{Binding Basket}" HorizontalContentAlignment="Stretch" SelectedItem="{Binding SelectedFromBasket}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="Black" BorderThickness="1">
+                        <StackPanel>
+                            <Label Content="{Binding Name}" FontSize="16" ContentStringFormat="Név: {0}"/>
+                            <Label Content="{Binding Type}" FontSize="16" ContentStringFormat="Típusa: {0}"/>
+                            <Label Content="{Binding Price}" FontSize="16" ContentStringFormat="Ár: {0}"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

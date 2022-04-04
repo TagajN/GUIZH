@@ -1,0 +1,12 @@
+Gigabyte 350B;Alaplap;30000
+Gigabyte 820;Alaplap;50000
+Asus Rog;Alaplap;75000
+HyperX 8GB;RAM;14000
+HyperX 16GB;RAM;20000
+Kingston 8GB;RAM;12000
+Intel core i5;CPU;90000
+Intel core i7;CPU;120000
+AMD Ryzen 5;CPU;56000
+Samsung 500GB;SSD;20000
+Kingston 500GB;SSD;16000
+Kingston 1TB;SSD;16000
