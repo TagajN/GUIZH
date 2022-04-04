@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "dFYMHGfG+PNeEHxglRwpaSjqcRnnhqo6I0lMmK28Af4JRlVSKuumNJbtme1J3nyCkAAsYzcM0TA2Pr6re5HUvg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ZZ07NN740\\source\\repos\\GUIZH\\Computer_app\\Computer_app\\Computer_app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ZZ07NN740\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\ZZ07NN740\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ZZ07NN740\\.nuget\\packages\\microsoft.toolkit.mvvm\\7.1.2\\microsoft.toolkit.mvvm.7.1.2.nupkg.sha512",
+    "C:\\Users\\ZZ07NN740\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
